@@ -10,7 +10,7 @@ public class AnimalBehavior : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 
 	public static Animal chooseParent (Animal animal) {
@@ -76,7 +76,7 @@ public class AnimalBehavior : MonoBehaviour {
 			bool noKids = parentsOnly && neighbor.children.Count == 0;
 			bool tooDeep = sameDepthOrLess && neighbor.depth > animal.depth;
 			bool parent = neighbor == animal.parent;
-			if (noKids || tooDeep) {
+			if (tooDeep) {
 				continue;
 			}
 			center += neighbor.transform.position;

@@ -32,3 +32,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+herd_dat_test/*
+.DS_Store
+Assets/Standard Assets/*
